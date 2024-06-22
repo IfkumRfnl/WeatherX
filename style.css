@@ -1,0 +1,30 @@
+body {
+    background-color: #242424;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+header {
+    direction: column;
+}
+
+err {
+    font-size: 20px;
+    color: #ff0000;
+}
+
+cityname {
+    font-size: 20px;
+    margin-bottom: 0px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+weather {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 50px;
+}
