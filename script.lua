@@ -2,14 +2,14 @@ local city = get("cityname")
 local err = get("err")
 local weather = get("weather")
 city.on_submit(function(content)
-    print(content)
+    -- print(content)
 
     local cords = fetch({
         url = "https://geocoding-api.open-meteo.com/v1/search?name=" .. content,
         method = "GET",
         headers = { ["Content-Type"] = "application/json" },
     })
-    print(cords)
+    -- print(cords)
 
     if cords["results"] ~= nil then
         err.set_content("")
@@ -19,7 +19,7 @@ city.on_submit(function(content)
             method = "GET",
             headers = { ["Content-Type"] = "application/json" },
         })
-        print(res)
+        -- print(res)
         local cur = res["current"]
 
         local str = ""
@@ -58,8 +58,5 @@ city.on_submit(function(content)
     end
 end)
 
-btn.on_click(function()
-    print("Click!")
-end)
 
 
