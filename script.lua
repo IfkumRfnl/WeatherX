@@ -41,7 +41,7 @@ city.on_submit(function(content)
             if cur["precipitation"] > 0 and cur["cloud_cover"] == 100 then
                 str = str .. "⛈"
             elseif cur["cloud_cover"] < 50 then
-                str = str .. "🌤"
+                str = str .. "⛅"
             else
                 str = str .. "☁"
             end
